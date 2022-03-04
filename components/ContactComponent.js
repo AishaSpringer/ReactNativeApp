@@ -1,37 +1,14 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
-import { Text, Card } from 'react-native-elements';
-import { createStackNavigator } from 'react-navigation-stack';
-import { createDrawerNavigator } from 'react-navigation-drawer';
-import { createAppContainer } from 'react-navigation';
-import { PARTNERS } from '../shared/partners';
-
-const ContactNavigator = createStackNavigator(
-    {
-        Contact: { screen: Contact }
-    },
-    {
-        defaultNavigationOptions: {
-            headerStyle: {
-                backgroundColor: '#5637DD'
-            },
-            headerTintColor: '#fff',
-            headerTitleStyle: {
-                color: '#fff'
-            }
-        }
-    }
-);
-
-const AppNavigator = createAppContainer(ContactNavigator)
+import { Text, ScrollView } from 'react-native';
+import { Card } from 'react-native-elements';
 
 class Contact extends Component {
-    constructor(props) {
+     constructor(props) {
         super(props);
         this.state = {
-            partners: PARTNERS
+            
         };
-    }
+    } 
 
     static navigationOptions = {
         title: 'Contact Us'
