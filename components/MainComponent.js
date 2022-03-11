@@ -42,7 +42,7 @@ const DirectoryNavigator = createStackNavigator(
 
 const HomeNavigator = createStackNavigator(
     {
-        Home: { screen: Home } //delete this?
+       Home: { screen: Home }
     }, 
     {
         defaultNavigationOptions: ({navigation}) => ({
